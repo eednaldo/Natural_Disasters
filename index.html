@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon_io/site.webmanifest">
+		
+		<title>Advanced SQL</title>
+		
+	</head>
+	
+<body>
+	<div id="wrapper">
+		<div id="bannerimage"></div>
+	</div>
+	
+	<ul class="menu">
+	  <li class="menu"><a href="index.html" class="active">Home</a></li>
+	  <li class="menu"><a href="earthquakes/earthquakes.html">Earthquakes</a></li>
+	  <li class="menu"><a href="hurricanes/hurricanes.html">Hurricanes</a></li>
+	  <li class="menu"><a href="storms/storms.html">Severe Storms</a></li>
+	  <li class="menu"><a href="about/about.html">About SQL</a></li>
+	</ul>
+
+	<h2> IS 6850-008 Summer 2020 Advanced SQL for Analytics </h2>
+	<h3> Ednaldo Oliveira Lima</h3>
+	<h3> Master of Science in Information Systems </h3>
+	<h3> David Eccles School of Business - University of Utah </h3>
+
+	<h3> Proposal </h3>
+	<p> When I started my planning to come to the United States, a particular concern arose regarding climate and natural disasters such as earthquakes, 
+			hurricanes, snowstorms, maximum and minimum temperatures, etc. </p> 
+	<p>Finding all this information in one place and being able to analyze how relevant and how often these events occur is not an easy task, 
+			especially since these events cannot be predicted, or at least not well in advance. We can only get an idea by analyzing historical data.</p> 
+	<p>In my case, I searched for information on Google from city to city. </p>
+	<p>This project intends to provide information using historical data on natural disasters in the United States. 
+		Also, do some analysis comparing the states with each other.</p>
+	<p>Some questions that I want to answer or provide information for the user to make their own decisions are what types of natural disasters occur in certain places, 
+		how often, how badly, and how bad they are compared to other regions in the country.</p>
+		
+	<h3> Datasets used </h3>
+	<h4> bigquery-public-data:noaa_hurricanes </h4>
+			<p> Overview: The historical positions and intensities along the tracks of global tropical cyclones (TC) are provided by NOAA’s International Best Track Archive for 
+				Climate Stewardship (IBTrACS). Tropical Cyclones are known as hurricanes in the north Atlantic and northeast Pacific ocean basins, typhoons in the northwest 
+				Pacific ocean basin, cyclones in the north and south Indian Ocean basins, and tropical cyclones in the southwest Pacific ocean basin. 
+				TCs endanger millions annually in those coastal regions. IBTrACS collects data about TCs reported by international monitoring centers who have a responsibility to 
+				forecast and report on TCs (and also includes some important historical datasets). Presently, IBTrACS includes data from 9 different countries. Historically, 
+				the data describing these systems has included best estimates of their track and intensity (hence the term, best track). Update frequency: Daily</p>
+	<h4> bigquery-public-data:noaa_historic_severe_storms </h4>
+			<p> Overview: The Storm Events Database is an integrated database of severe weather events across the United States from 1950 to this year, 
+				with information about a storm event's location, azimuth, distance, impact, and severity, including the cost of damages to property and crops. 
+				It contains data documenting: The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, 
+				significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida 
+				or the San Diego coastal area. Other significant meteorological events, such as record maximum or minimum temperatures or precipitation that occur in connection with 
+				another event. Update frequency: Monthly</p>
+	<h4> bigquery-public-data:noaa_significant_earthquakes </h4>
+			<p>According to the National Center for Environmental Information (NCEI): <br>
+				"The Significant Earthquake Database contains information on destructive earthquakes from 2150 B.C. to the present that meet at least one of the following criteria: 
+				Moderate damage (approximately $1 million or more), 10 or more deaths, Magnitude 7.5 or greater, 
+				Modified Mercalli Intensity X or greater, or the earthquake generated a tsunami."
+			<p>National Geophysical Data Center / World Data Service (NGDC/WDS): Significant Earthquake Database. National Geophysical Data Center, NOAA. doi:10.7289/V5TD9V7K</p>
+	<h4> bigquery-public-data:geo_us_boundaries</h4>
+	<p> These are full-resolution boundary files, derived from TIGER/Line Shapefiles, the fully-supported, core geographic products from the US Census Bureau. 
+			They are extracts of selected geographic and cartographic information from the US Census Bureau's Master Address File/Topologically Integrated Geographic Encoding and Referencing 
+			(MAF/TIGER) database.</p> 
+			<p>These include information for the 50 states, the District of Columbia, Puerto Rico, and the Island areas (American Samoa, the Commonwealth of the Northern Mariana Islands, 
+				Guam, and the United States Virgin Islands). These include polygon boundaries of geographic and statistical areas, linear features including roads and hydrography, and point features.</p>
+	
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top" >
+		<img src="img/go-to-top-icon.svg" width="30px" height="30px" alt="Top" />
+	</button>
+	<script type="text/javascript" src="topBtn.js"></script>	
+</body>
+</html>

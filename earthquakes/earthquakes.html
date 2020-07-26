@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../mystyle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon_io/site.webmanifest">
+		
+	<title>US Significant Earthquakes</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" 
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" 
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="bannerimage"></div>
+	</div>
+	
+	<ul class="menu">
+	  <li class="menu"><a href="../index.html" >Home</a></li>
+	  <li class="menu"><a href="earthquakes.html" class="active">Earthquakes</a></li>
+	  <li class="menu"><a href="../hurricanes/hurricanes.html">Hurricanes</a></li>
+	  <li class="menu"><a href="../storms/storms.html">Severe Storms</a></li>
+	  <li class="menu"><a href="../about/about.html">About SQL</a></li>
+	</ul>
+
+	<h1>US Significant Earthquakes</h1>
+
+	<p>According to the National Center for Environmental Information (NCEI): </p>
+	<p>"The Significant Earthquake Database contains information on destructive earthquakes from 2150 B.C. to the present that meet at least one of the following criteria: </p>
+	<ul>
+		<li> Moderate damage (approximately $1 million or more)</li>
+		<li> 10 or more deaths</li>
+		<li> Magnitude 7.5 or greater</li>
+		<li> Modified Mercalli Intensity X or greater</li>
+		<li> Or the earthquake generated a tsunami."</li>
+	</ul>
+	<h2>Number of significant earthquakes in the United States by state.</h2>
+
+	<div id='map'></div>
+	<h5> * The epicenter may be in another state or the ocean. It can also happen that two different earthquakes have the same epicenter.</h5>
+	
+	<div id='pie'></div>
+
+	<div id='bar'></div>
+
+
+
+
+
+
+	<p>National Geophysical Data Center / World Data Service (NGDC/WDS): Significant Earthquake Database. </p>
+	<p>National Geophysical Data Center, NOAA. doi:10.7289/V5TD9V7K</p>
+
+	<p>See the NOAA  
+	<a href="https://www.ngdc.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Hazards/iso/xml/G012153.xml&view=getDataView&header=none"> website </a>
+	for more details about the dataset</p><br>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top" >
+		<img src="../img/go-to-top-icon.svg" width="30px" height="30px" alt="Top" />
+	</button>
+	<script type="text/javascript" src="../topBtn.js"></script>	
+	<script type="text/javascript" src="earthquakeMapData.js"></script>
+	<script type="text/javascript" src="mapControll.js"> </script>
+	<script type="text/javascript" src="pie.js"></script>
+	<script type="text/javascript" src="bar.js"></script>	
+	
+</body>
+</html>

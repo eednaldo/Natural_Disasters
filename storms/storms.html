@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../mystyle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon_io/site.webmanifest">
+		
+	<title>US Severe Storms</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" 
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" 
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="bannerimage"></div>
+	</div>
+	
+	<ul class="menu">
+	  <li class="menu"><a href="../index.html" >Home</a></li>
+	  <li class="menu"><a href="../earthquakes/earthquakes.html" >Earthquakes</a></li>
+	  <li class="menu"><a href="../hurricanes/hurricanes.html" >Hurricanes</a></li>
+	  <li class="menu"><a href="storms.html" class="active">Severe Storms</a></li>
+	  <li class="menu"><a href="../about/about.html">About SQL</a></li>
+	</ul>
+
+	<h1>US Severe Storms</h1>
+
+	<h2>Number of Severe Storms in the United States by state. *</h2>
+	<div style="width: 100%; overflow: hidden;">
+		<div id='map' style="float: left;"></div>
+		<div id="divInfo" style="height:500px; overflow-y: auto; margin-left: 820px; overflow: auto; display:none">
+			<table id="table_info">
+			<thead>
+				 <tr>
+					<th colspan="3" id="th_State" ></th>
+				 </tr>
+				 <tr>
+				   <th>Event</th>
+				   <th>Average duration(min)</th>
+				   <th>Year</th>
+				 </tr>
+			</thead>
+				<tbody id="testBody"></tbody>
+			</table>
+	</div>
+</div>
+
+	<h5> Since 1950.</h5>
+
+	<div id='bar'></div>
+	<div id='year'></div>
+	<div id='bar_type'></div>
+	<div id='bar_avg_often'></div>
+	<div id='bar_avg_duration'></div>
+
+<br>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top" >
+		<img src="../img/go-to-top-icon.svg" width="30px" height="30px" alt="Top" />
+	</button>
+	<script type="text/javascript" src="../topBtn.js"></script>	
+	<script type="text/javascript" src="stormsMapData.js"></script>
+	<script type="text/javascript" src="mapControll.js"> </script>
+	<script type="text/javascript" src="bar.js"></script>
+    <script type="text/javascript" src="bar_type.js"></script>	
+	<script type="text/javascript" src="year.js"></script>
+	<script type="text/javascript" src="bar_avg_often.js"></script>	
+	<script type="text/javascript" src="bar_avg_duration.js"></script>
+	<script type="text/javascript" src="infoData.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../mystyle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon_io/site.webmanifest">
+		
+	<title>Hurricanes</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" 
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" 
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="bannerimage"></div>
+	</div>
+	
+	<ul class="menu">
+	  <li class="menu"><a href="../index.html" >Home</a></li>
+	  <li class="menu"><a href="../earthquakes/earthquakes.html" >Earthquakes</a></li>
+	  <li class="menu"><a href="hurricanes.html" class="active">Hurricanes</a></li>
+	  <li class="menu"><a href="../storms/storms.html">Severe Storms</a></li>
+	  <li class="menu"><a href="../about/about.html">About SQL</a></li>
+	</ul>
+
+	<h1>US Hurricanes</h1>
+
+	<p> The historical positions and intensities along the tracks of global tropical cyclones (TC) are provided by NOAA’s International Best Track Archive for Climate Stewardship (IBTrACS). 
+	<br>Tropical Cyclones are known as hurricanes in the north Atlantic and northeast Pacific ocean basins, typhoons in the northwest Pacific ocean basin, cyclones in the north and south Indian 
+			Ocean basins, and tropical cyclones in the southwest Pacific ocean basin. </p>
+			<p>TCs endanger millions annually in those coastal regions. </p>
+			<p> IBTrACS collects data about TCs reported by international monitoring centers who have a responsibility to forecast and report on TCs 
+			(and also includes some important historical datasets). Presently, IBTrACS includes data from 9 different countries. </p>
+			<p>Historically, the data describing these systems has included best estimates of their track and intensity (hence the term, best track). </p>
+
+	<h2>Number of hurricanes in the United States by state. *</h2>
+
+	<div id='map'></div>
+	<h5> * Hurricanes that have their latitude and longitude according to bigquery-public-data.noaa_hurricanes.hurricanes intersecting the state.</h5>
+	
+	<div id='bar'></div>
+	<div id='season'></div>
+	
+	<script type="text/javascript" src="hurricanesMapData.js"></script>
+	<script type="text/javascript" src="mapControll.js"> </script>
+	<script type="text/javascript" src="bar.js"></script>	
+	<script type="text/javascript" src="season.js"></script>	
+
+<br>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top" >
+		<img src="../img/go-to-top-icon.svg" width="30px" height="30px" alt="Top" />
+	</button>
+	<script type="text/javascript" src="../topBtn.js"></script>	
+	
+</body>
+</html>

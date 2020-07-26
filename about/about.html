@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../mystyle.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="../img/favicon_io/site.webmanifest">
+		
+	<title>About SQL</title>
+
+	<meta charset="utf-8" />
+
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="bannerimage"></div>
+	</div>
+	
+	<ul class="menu">
+	  <li class="menu"><a href="../index.html" >Home</a></li>
+	  <li class="menu"><a href="../earthquakes/earthquakes.html" >Earthquakes</a></li>
+	  <li class="menu"><a href="../hurricanes/hurricanes.html" >Hurricanes</a></li>
+	  <li class="menu"><a href="../storms/storms.html" >Severe Storms</a></li>
+	  <li class="menu"><a href="about.html" class="active">About SQL</a></li>
+	</ul>
+
+	<h3>In this project the following functions, aggregators, and statements were used:</h3>
+	<div style="width: 100%; overflow: auto;">
+		<div style="float: left;">
+			<ul>
+				<li> ARRAY_AGG</li>
+				<li> AVG</li>
+				<li> CASE</li>
+				<li> CAST </li>		
+				<li> CONCAT</li>
+				<li> COUNT</li>
+				<li> DATETIME_DIFF</li>
+				<li> DISTINCT</li>
+				<li> EXTRACT ( part from date )</li>
+				<li> FORMAT_DATE </li>
+				<li> GENERATE_DATE_ARRAY</li>
+				<li> GROUP BY</li>
+				<li> HAVING</li>
+				<li> IFNULL</li>
+			</ul>
+		</div>
+
+		<div style="margin-left: 400px; overflow: auto;">
+			<ul>
+				<li> LOWER</li>
+				<li> MIN</li>
+				<li> ORDER BY</li>
+				<li> OVER</li>
+				<li> RANK</li>
+				<li> ROUND</li>
+				<li> ROW_NUMBER</li>
+				<li> ST_AsGeoJSON</li>
+				<li> ST_GEOGPOINT</li>
+				<li> ST_INTERSECTS</li>
+				<li> ST_SIMPLIFY</li>
+				<li> STRING_AGG</li>
+				<li> STRUCT</li>
+				<li> UNNEST</li>
+			</ul>
+		</div>
+	</div>
+	<h3> Datasets used </h3>
+		<ul>
+			<li><h4> bigquery-public-data:noaa_hurricanes </h4></li>
+			<li><h4> bigquery-public-data:noaa_historic_severe_storms </h4></li>
+			<li><h4> bigquery-public-data:noaa_significant_earthquakes </h4></li>
+			<li><h4> bigquery-public-data:geo_us_boundaries</h4></li>
+		</ul>
+
+<br>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top" >
+		<img src="../img/go-to-top-icon.svg" width="30px" height="30px" alt="Top" />
+	</button>
+	<script type="text/javascript" src="../topBtn.js"></script>	
+
+</body>
+</html>
