@@ -18,3 +18,10 @@ We generate data visualization using HTML, JavaScript, and JSON.
 
 
 Start navigating from the [index.html](https://github.com/eednaldo/Natural_Disasters/blob/master/index.html) page.
+
+
+![GitHub Logo](/img/index.png) 
+
+![GitHub Logo](/img/earthQ.png) 
+
+![GitHub Logo](/img/stormsR.png) 
